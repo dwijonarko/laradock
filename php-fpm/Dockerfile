@@ -867,6 +867,7 @@ ARG INSTALL_WKHTMLTOPDF=false
 
 RUN if [ ${INSTALL_WKHTMLTOPDF} = true ]; then \
     apt-get install -y \
+    xvfb\
     libxrender1 \
     libfontconfig1 \
     libx11-dev \
